@@ -88,7 +88,50 @@
                                  
                                  . Whenever there is a number and a string the number will be converted to string and then the operation is perfomed
                                      if the operator bw them is + and in case of - operator string will be converted to number.
+                                 . For * and / the results will be similar to -.
+                                 
+                      . 5 falsy values in JS : 0 , '" , undefined , null, NaN and false itsely is false.
+                        and every value other than this will be trult values.
+                        
+                       . There are two scenariois in which JS converts to Boolean one in if else and other in relational operators.
+                       
+                       
+ --> Equality Operators ( == and === ) : These are basically used to check whether two values are equal or not.
  
+            . === is called the strict equality operator becoz it does not perform type coersion.
+            . == loose equality operator. It actually done type coersion.
+            . It is advised to use only === only and if you need conversion you can do it mannualy.
+            
+           #NOTE : prompt() function is used to take input from the user and returns a string value.
+           
+           
+--> Strict Mode : We use strict mode to make our code secure.
+                 . We can make a function or block as strict but we generally wite the activate strict mode on the top no code should be there
+                   before it unless comments.
+                 . Syntax :   'use strict';
+                 
+                 
+--> Functions :   There are three types of functions in java 
+                    . function declaration
+                    . function expresiion 
+                    . Arrow function
+                    
+                   #Note : one major differnce b/w them is that functiom declaration can be called befone they are declared but this is not possible
+                           with function expression.
+                           
+                            'use strict';
+
+                              // function declaration
+                               function getAge1(year){
+                                 return 2022 - year;
+                               }
+
+                                 const getAge2 = function(year){
+                                  return 2022 - year;
+                                   }
+
+                               console.log(getAge1(2000) , "from age1");
+                               console.log(getAge2(2000) , "from age2");
  
  
  

@@ -72,9 +72,22 @@
                                          . we can write the string and if we want a variable the ${variable} is used.
                                          . eg :  const str = `I'm, ${name} and am ${ age } years old`;
                                          . It is used to create multiline strings. \n not required.
+                                         
+                                         
+  --> Type conversion and coersion :  . Type conversion in when we mannually convert one data type to another on the other hand type coersion is 
+                                        JS converts automatically to types nehind the scenes for us.
+                                        
+                                      . We use a Number() function to convert a string a number. Eg: const num = Number('20');
+                                      . If we pass a string other than number then it will give NAN which states that it is invalid number. 
+                                      . NaN is of type number.
+                                      . Similarly, we have String function which converts a number to a string. Eg: const str = String(23);
  
  
- 
+                      Coersion : Whenever there is operator between two values of different types then JS automatically converts one of them to the
+                                 type of the other so that the operation can be performed.
+                                 
+                                 . Whenever there is a number and a string the number will be converted to string and then the operation is perfomed
+                                     if the operator bw them is + and in case of - operator string will be converted to number.
  
  
  

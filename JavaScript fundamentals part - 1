@@ -7,3 +7,96 @@
                . Js is high-level programming language.
                . It is object oriented too.
                . Multi-paradigm language.
+              
+           
+--> Value : values are the fundamental units or we can say data. eg:- 4 , "aryan" etc.
+           . Values are of two types it may be either object or of primitive type.
+           
+           
+--> Variables : Variables are the memory locations in which values are stored so that we can use it again and again.
+                 eg:- let name = "Aryan"; 
+                 #NOTE : It is not mendatory to put a semicolon in JS but its a good practise.
+                 
+                 . We can use camel case or snake case while declaring a variable in JS.
+                 . It should not have any space and special character other than $ ans _.
+                 . Cannot start with a number.
+                 . we cannot use reserved keyword.
+                 . #NOTE : we can use reserved keyword name as variable name and it is allowed but in some cases it creates some problem.
+                 . It is recommended to use lowercase while starting a variable name, it is just convention that is used.
+                 . We start with uppercase in case of objects.
+                 . For contants we use all uppercase. Eg:- let PI = 3.14;
+                 
+                 
+--> Data types :  This is used to define what is the type of the data we are dealing with.
+                  There are two types of data types :
+                   . Primitive data type 
+                   . Objects
+                   
+                   --> Primitive Datatype : These are the datatpes which are given by javascript.
+                                There are basically 7 primitive data types in JS :
+                                 . Number : Used for decimals and integers                                 
+                                 . String : Sequence of character either in double quote and single quote.
+                                 . Boolean : Stores either true or false
+                                 . undefined : Value taken by a variable that is not yet defined
+                                 . null : it means empty value
+                                 . Symbol : Value that is unique and cannot be changed.
+                                 . BigInt : Larger integer that a number can hold.
+                            ##NOTE : JS is dynamically types
+                                     . We do not have differnt variables we have different values
+                                     . We can change different value in other type variable. Eg: we have let x = 20;
+                                              later in the code x can also be x = "Aryan".
+                                              
+                                           
+                                           
+--> Commenst : There are two types of comments : 
+                  . Single line comment : // ------
+                  . Multiline comment : /*  ----- */
+                  
+--> typeof : It is an operator which is used to determine the datatype of a value.
+
+                 #********  IMPORTANT Note : js says that the type of null is object.
+                 
+--> 3 different ways of witing a variable in JS : 
+ 
+          . let : when we mutate the variable is a perfect case of using let.  eg: let x = 10;
+                  . It is also used to declare empty variable.
+                  
+          . const : When we do not change the variable value then it we can use const. eg: const PI = 3.14;
+                    . It is compulsory to initialize the const value;
+                    
+          . var : . It is the old way of defining the variable prior to ES6.
+                  . var is functional scope while let is block scope.
+                  
+ --> Template literals ( strings )   :   We can write a string in more normal way and then basically insert the variables directly into the string.
+                                         . In this we use backticks ( ` ` ).
+                                         . we can write the string and if we want a variable the ${variable} is used.
+                                         . eg :  const str = `I'm, ${name} and am ${ age } years old`;
+                                         . It is used to create multiline strings. \n not required.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

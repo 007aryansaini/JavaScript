@@ -209,7 +209,16 @@
                      #note : It is better to store the calculation in a new variable as in the function we can change 
                                 inplace of return we can declare this.age = calcAge(); and then return it this.age;
                   
-               
+                  
+--> Debugging :   It is the process of finding bugs in the code and to correct them.
+                   Various console used ;
+                     . console.log();
+                     . console.table();
+                     . console.warn();
+                     . console.error();
+                     
+                     
+                     We can use keyword 'debugger' keyword to add a breakpoint.
 
                          
                

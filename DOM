@@ -1,0 +1,10 @@
+--> DOM : Document Object Model :-  It is the structured representation of HTML Documents. It basic allows javascript to access HTML elements and 
+                                     style to manipulate them.
+                                     
+                                    . DOM isautomatically created by the browser as soon as the HTML page loads.
+                                    
+                              
+                              
+                              .Document is the entry point to the DOM.
+                              
+                              #NOTE: DOM is not the part of javascript. The DOM and the DOM method are actually the part of web API's.

@@ -30,3 +30,18 @@
                                
        ***# Note :- For practical application we can use OR short circuiting for setting deafult values and and AND short circuiting exectute the code 
                     in the seconf operant if the first operand is true.
+                    
+                    
+                    
+           There is some problem in OR short circuiting :- 
+              eg:   guest = 0;
+
+                     //Setting the default values of guests :
+                    const getGuest = guest || 10;
+
+                    console.log(getGuest);
+                    
+                    o/p ; 10 ( but we expect 0)
+                    
+                    Note : this problem is solved by using the nullish coalescing operator ( ??).
+

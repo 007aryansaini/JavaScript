@@ -1,1 +1,25 @@
+Problem :    
 
+
+guest = 0;
+
+//Setting the default values of guests :
+const getGuest = guest || 10;
+
+console.log(getGuest);
+
+
+--> This problem is solved by using nullish coalescing operator ( ?? ) which is introduced in Es in 2020.
+
+guest = 0;
+
+//Setting the default values of guests :
+const getGuest = guest ?? 10;
+
+console.log(getGuest);
+
+o/p = 0 ( as expected)
+
+Nullish Values :  null or undefined ( NOT 0 and '')
+
+Basically it considers 0 and '' as the truthy values.  Falsy values are ( null or undefined ).

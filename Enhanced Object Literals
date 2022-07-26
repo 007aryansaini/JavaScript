@@ -1,0 +1,16 @@
+ES6 give 3 ways to write object literals : 
+
+    . let aryan = {
+  lastname: 'Saini',
+  college: 'GBU',
+  school: 'ICT',
+};
+let kartik = {
+  aryan,
+};
+
+console.log(aryan, kartik);
+
+     . Function in the object can be written as : 
+             
+             

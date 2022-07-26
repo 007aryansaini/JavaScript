@@ -1,0 +1,32 @@
+let rest1 = {
+  name: 'Amrik Sukhdev',
+  // numGuests: 20,
+  numGuests: 0,
+};
+
+let rest2 = {
+  name: 'Mannat',
+  owner: 'Aryan',
+};
+
+/*rest1.numGuests = rest1.numGuests || 10;
+rest2.numGuests = rest2.numGuests || 10;
+console.log(rest1.numGuests, rest2.numGuests);
+*/
+//  This can be more concisely written using logical assignment operator :
+
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+//Nullish operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+//onsole.log(rest1.numGuests, rest2.numGuests);
+
+// logical And Assignment operator
+
+console.log((rest1.name &&= 'Annonymous'));
+console.log((rest2.name &&= 'Annonymous'));
+
+//BAsically && logical assignment operator is used to set a value of something which is truthy

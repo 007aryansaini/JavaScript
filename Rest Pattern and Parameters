@@ -1,0 +1,27 @@
+--> Rest Pattern : . The rest pattern is just opposite of spread operator. The rest pattern is used to pack an array while the spread operator is used 
+                      to unpack an array.
+                   
+                   . The rest pattern is on the left side if = where as the spread operator is on the right hand side of the =.
+                   
+                   . Eg : const arr = [1, 2, ...[3, 4, 5]];
+                          console.log(arr);
+
+                          const [a, b, ...others] =  arr;
+                          console.log(a, b, others);
+
+
+--> Rest pattern application in function :  
+ 
+ 
+                eg:-  const add = function (...elements) {
+                      let sum = 0;
+                      for (let i = 0; i < elements.length; i++) {
+                      sum += elements[i];
+                      }
+                      return sum;
+                      };
+
+                      console.log(add(2, 3, 4, 5));
+
+                    #Conclusion : In this add fucntion you can pass as many arguments as you want and in return you will get the sum of all the 
+                                  arguments that you have passes in the array.

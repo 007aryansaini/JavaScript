@@ -1,0 +1,61 @@
+--> Map :   
+
+         . A map is a datastructure in Javascript that is used to map value with keys.
+         . In map the keys can be of any type while in object the keys are basically strings. It can even be objects or arrays or other maps.
+         . The easiest way to create a map is to create an empty map.
+            const map = new Map();
+            map.set( ' name' , 'Aryan ' );
+          .  while updating the maps, the new updated map wil;l be returned.
+          . In order to read data from the map we use get method.
+          . It also have has method to check whether a certain key is there or not returns boolean value .
+          . we can also delete the values based on the key. 
+          . It also have the size property to get the size of the map.
+          . It have clear method to clear all the values of the map.
+          #Note : In order to create an array as a key we need to first define the array and then we have to use it. As in JS array are stored in heap
+                  so they might refer to different objects.
+                  // We can even pass objects as an argument in Map.
+                    . Maps are also iterables.
+                    . we can also convert maps to array.
+          
+          
+const map = new Map();
+map.set(true, 'Opens');
+map.set(false, 'closed');
+map.set('name', 'aryan saini');
+map.set(1, 'One');
+console.log(map);
+console.log(map.get(true));
+console.log(map.size);
+map.delete(1);
+console.log(map);
+console.log(map.has(true));
+map.clear();
+console.log(map);
+
+
+           . Another way of creating a map :
+           
+  const newMap = new Map([
+  ['Question', 'Which is the most powerful programming language?'],
+  ['answer', 'Javascript'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'Javascript'],
+  [true, 'Congratulations your answer is correct.'],
+  [false, 'Incorrect answer...'],
+]);
+
+console.log(newMap);
+
+// We can even pass objects as an argument in Map.
+
+let a = {
+  name: 'Aryan',
+  email: 'abc@gmail.com',
+};
+
+const objMap = new Map(Object.entries(a));
+console.log(objMap);
+
+           
+           

@@ -57,5 +57,34 @@ let a = {
 const objMap = new Map(Object.entries(a));
 console.log(objMap);
 
+
+
+-------> 
+
+
+const newMap = new Map([
+  ['Question', 'Which is the most powerful programming language?'],
+  ['answer', 'Javascript'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'Javascript'],
+  [true, 'Congratulations your answer is correct.'],
+  [false, 'Incorrect answer...'],
+]);
+
+console.log(newMap.get('Question'));
+
+for (const [key, value] of newMap) {
+  if (typeof key === 'Number') {
+    console.log(`${key} : ${value}`);
+  }
+}
+
+//const userOption = Number(prompt('Enter you option '));
+
+const ans = 'C';
+console.log(newMap.get(newMap.get('answer') === ans));
+
+
            
            

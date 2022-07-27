@@ -33,6 +33,26 @@ const restaurant = {
 
   order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    
+    
+    
+    
+    
+    ---------------------------------> Another exmaple : 
+    
+    const aboutMe = {
+  name: 'Aryan',
+  email: 'aryan@gmail.com',
+  mob: '9897004966',
+  college: 'GBU',
+};
+
+const entries = Object.entries(aboutMe);
+
+for (const [key, value] of entries) {
+  console.log(`${key} : ${value}`);
+}
+
   },
 
   orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {

@@ -1,0 +1,74 @@
+--> String in JS :  
+     
+     . Boxing : Whenever we use any method on a string like indexof, slice etc. then javascript behing the scenes convert the string into objects 
+                and this is known as boxing. and these method returns the primitive string dataType.
+                
+               
+                We have lots of methods and 3 methods which returns boolean.
+           
+const airline = 'Air India rishikesh';
+const plane = 'A320';
+
+console.log(airline, plane);
+
+console.log(plane[0]);
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('rishikesh'));
+
+console.log(airline.slice(0, 10));
+console.log(airline.slice(-2));
+console.log(airline.toUpperCase());
+console.log(airline.toLowerCase());
+console.log(airline.toLocaleLowerCase());
+
+const FirstName = 'aRYan';
+const lowerCaseName = FirstName.toLowerCase();
+const correctedName = lowerCaseName[0].toUpperCase() + lowerCaseName.slice(1);
+console.log(correctedName);
+
+const email = 'aryan@gmail.com';
+const userEmail = '  Aryan@gmail.com  ';
+
+const normalizedEmail = userEmail.toLowerCase().trim();
+
+console.log(email === normalizedEmail);
+
+const priceUSD = '125,768$';
+const priceInd = priceUSD.replace(',', '.').replace('$', 'IND');
+console.log(priceInd);
+
+const announcement =
+  'All passenger come to the boarding door 23. Boarding door 23!.';
+console.log(announcement.replaceAll('door', 'gate'));
+//regex
+console.log(announcement.replace(/door/g, 'gate'));
+
+const airbus = 'Airbus A320neo';
+if (airbus.startsWith('Air') && airbus.endsWith('neo')) {
+  console.log('Part of new planes.');
+}
+
+console.log(airbus.includes('A3'));
+
+const sentence = "I'm+very+Good.";
+console.log(sentence.split('+'));
+
+const newSentence = ['I', 'am', 'very', 'good.'].join('_');
+console.log(newSentence);
+
+//padding in sting
+
+const maskCardNumber = function (number) {
+  const str = String(number);
+  const last = str.slice(-4);
+
+  return last.padStart(str.length, 'X');
+};
+
+console.log(maskCardNumber(3456789));
+console.log(maskCardNumber(123456789));
+console.log(maskCardNumber('123456789'));
+
+console.log(sentence.repeat(5));
+

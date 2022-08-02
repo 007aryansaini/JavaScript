@@ -2,6 +2,9 @@
                         there we can pass three parameters and their order is current element , current index , array which we are looping over.
                         
                         #Note : The continue and the break statements do not work in forEach loop.
+                        #NOTE : in map forEach also the first value is current value, second is the corresponding key and the third is maps itself.
+                        #Note : In sets forEach even though the maps has no keys even though the signature is same so to avoid confudion between the
+                                developers. Key and value values will be the same for sets.
                         
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -26,4 +29,8 @@ movements.forEach(function (movement, i) {
   }
 });
 
-                                
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   ForEach on Maps and sets :   
+         

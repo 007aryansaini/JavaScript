@@ -1,0 +1,11 @@
+It is basically used to get the element at certain index. The main benefit is that if we want to get the last element we cal also use negative indexing.
+The at method also works on string.
+
+'use strict';
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+console.log(arr.at(-1));
+
+const str = 'aryan';
+console.log(str.at(-1));

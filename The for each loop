@@ -1,0 +1,29 @@
+--> The forEach Loop :  It is a method of array which is of higher order and in each iteration it calls a callback function. In the fallback function
+                        there we can pass three parameters and their order is current element , current index , array which we are looping over.
+                        
+                        #Note : The continue and the break statements do not work in forEach loop.
+                        
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// Using for of loop
+for (const [i, movement] of movements.entries()) {
+  if (movement > 0) {
+    console.log(`Movement ${i + 1} : You deposited ${movement}`);
+  } else {
+    console.log(`Movement ${i + 1} : You debited ${Math.abs(movement)}`);
+  }
+}
+
+// Using ForEach method
+
+console.log('---------------ForEach---------------');
+movements.forEach(function (movement, i) {
+  if (movement > 0) {
+    console.log(`Movement ${i + 1} : You deposited ${movement}`);
+  } else {
+    console.log(`Movement ${i + 1} : You debited ${Math.abs(movement)}`);
+  }
+});
+
+                                

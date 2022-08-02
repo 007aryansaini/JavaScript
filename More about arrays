@@ -1,0 +1,38 @@
+. Slice method in array : It is used to get a part of an array and it returns that part of the array without changing the original array.
+. arr.slice( 2 , 4) : We will get the array from 2 to index 3. $ index is not included.
+. We can also create a shallow copy of 
+. Splicae method : It is similar to slice method but the funndamental difference is it changes the oriinal array or mutate the array.
+. The first parameter in the splice is exactly the same as slice but the second parameter is how many element you want to remove.
+. Reverse method is used to reverse the array and returns it and it actually mutate the original array.
+. Concat is used to concatenate two arrays without mutating the original array.
+. Join method is used to join the elements of the array and the output will be the string.
+
+'use strict';
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// SlICE METHOD : It does not mutate the original array
+console.log(arr.slice(1));
+console.log(arr.slice(-1));
+console.log(arr.slice(2, -2));
+
+// SPlICE METHOD : It mutates the original array
+
+console.log(arr.splice(1, 3));
+console.log(arr);
+
+// REVERSE METHOD  : It mutates the orginal array
+
+arr = ['a', 'b', 'c', 'd', 'e'];
+let arr2 = ['j', 'i', 'h', 'g', 'f'];
+console.log(arr2.reverse());
+console.log(arr2);
+
+//Concat : It concatenate the two arrays : It does not mutate the original array.
+
+console.log(arr.concat(arr2));
+console.log([...arr, ...arr2]);
+
+//JOIN Method : It returns a string, It does not mutate the orginal array.
+console.log(arr.join('-'));
+console.log(arr);

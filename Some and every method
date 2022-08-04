@@ -1,0 +1,7 @@
+The include method only returns if a certain value is present or not that is it only checks for === .
+But if we want some other conditions to be satisfied then we will use some function. It will return true if at least one element is there which is 
+satisfying the condition and otherwise false.
+
+Every is used when all the elements in the array satisfies the condition else false.
+
+They both uses callback functions as we have used in other array methods.

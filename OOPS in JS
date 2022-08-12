@@ -1,0 +1,19 @@
+--> constructor function :    New operator is used to call a constructor function.
+                              There are basically 4 steps when a constructor function is called - 
+                                1. New {} is created
+                                2. function is called, this = {}
+                                3. {} is linked to prototype
+                                4. function automatically returns {}.
+'use strict';
+
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
+
+const aryan = new Person('Aryan Saini', 2000);
+console.log(aryan);
+
+
+
+---> Prototypes :  

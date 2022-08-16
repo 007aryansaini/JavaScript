@@ -1,0 +1,21 @@
+-->  There are three types of functions in javascript : declaration, expression and arrow function.
+     The expression and the arrow function cannot be used before they are declared. We can only use them below they are declared.
+    
+    
+-->  We can set default parameters in the function if we do not defined the default parameter then we we do not pass that value as a parameter while 
+     calling then they will be undefined.
+    
+    
+-->  Before ES6 they default values are set by using short circuiting and in ES6 we can set default value by setting the default values in the parameter
+     list while defining the function and we can even use the parameters that are declared before that parameter.
+    
+-->  We cannot skip the parameters while calling the function although we can do this by setting that parameter that we want to skip to undefined while
+     calling the function But ofcourse that is of no use.
+     
+--> Call by value and call by refrence : When we pass a primitive type then a copy of that parameter is passed in the function but when we pass in the
+                                         parameter through refrence then only the refrence to that is copied and it will still point to that same object
+                                         so we must be very careful while dealing with call by refrence if we change some value then it will change the 
+                                         value of that object.
+                                         
+              #Note : JS does not actually have pass by refrence although in objects it seems like pass by refrence but actually it's pass by value
+                      as the value of the refrence is copied.

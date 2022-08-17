@@ -19,3 +19,12 @@
                                          
               #Note : JS does not actually have pass by refrence although in objects it seems like pass by refrence but actually it's pass by value
                       as the value of the refrence is copied.
+                      
+                      
+--> First class and Higher order functions : 
+
+     . Functions are another type of object in javascript and they are treated as values and we can do a bunch of properties like storing them in a 
+       variable and we can do a bunch of properties that we can do on an object are first order function.
+       
+     . Higher Order function : The functions which recieves a function as an argument or a function that returns another function or both are Higher
+                                order functions. And this is only possible beacuse of First-Class functions.

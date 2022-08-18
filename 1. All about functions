@@ -28,7 +28,11 @@
        
      . Higher Order function : The functions which recieves a function as an argument or a function that returns another function or both are Higher
                                 order functions. And this is only possible beacuse of First-Class functions.
-                                
+         
+         
+       --------------------------------------  CALL APPLY BIND --------------------------------------------------
+         
+         
 --> IMP : In a regular function call the this keyword is set to undefined. and if we want to set the value of this keyword then we have 3 functions
           call, apply and bind method.
           

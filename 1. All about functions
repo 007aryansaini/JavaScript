@@ -31,13 +31,20 @@
          
          
        --------------------------------------  CALL APPLY BIND --------------------------------------------------
+       
          
          
 --> IMP : In a regular function call the this keyword is set to undefined. and if we want to set the value of this keyword then we have 3 functions
           call, apply and bind method.
           
-          IF we apply call method to any function then the first argument will be the object on which we want to set the this keyword and rest of the
-          parameters as same as the function parameters.
+          . IF we apply CALL method to any function then the first argument will be the object on which we want to set the this keyword and rest of the
+            parameters as same as the function parameters.
           
           . The APPLY method does the same thing as the call method but it does not take the arguments individually of the original function instead it 
             takes an array of the arguments.
+            
+          . Bind : It also allow us to mannualy set the this keyword while a function call. It does not immediately call the function instead it returns 
+                   a new function where the this keyword is bound. BAsically we create a new function and the function which was returned by bind method 
+                   set the this key to which we specify and we can set the default signatures too in the bind method.
+                   
+            #NOTE : In event handlers the this keyword is attached to the element to which the event handler is attached.

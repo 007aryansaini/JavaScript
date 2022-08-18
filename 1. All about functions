@@ -48,3 +48,29 @@
                    set the this key to which we specify and we can set the default signatures too in the bind method.
                    
             #NOTE : In event handlers the this keyword is attached to the element to which the event handler is attached.
+                    Sp, we use bind method when we call an function through event handler and we uses the this keyword. 
+                    
+                    
+                    
+--> Immediately Invocked function expression ( IIFE ) : 
+    
+          This is the function that we want to execute only once. This can be done by encapsulating the function in parenthesis and using function expression
+          without assigning any name to it and same for arrow function.
+        
+(function () {
+  console.log('This function will never run again.');
+})();
+
+(() => {
+  console.log('This arrow function will never run again.');
+})();
+
+
+
+
+--> Closures : A closure makes a function remember all the variables that existed at the function birthplace essentially.
+              A function always have access to the variable environment of the execution context in which it was created.
+              
+              
+              see gain the video.
+                

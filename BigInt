@@ -1,6 +1,0 @@
-We can store as big as number we want to store in JS by adding n to the last of the number.
-It is a primitive datatype that introduced in ES6 2020.
-We cannot mix big int with other numbers.
-We can do comparion ( < , > ) only not === operator bw any number and bigint.
-Math operations also not work with bigint.
-They can be concatenated with string

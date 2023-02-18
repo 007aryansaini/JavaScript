@@ -1,3 +1,0 @@
---> It is the the underscore that we can put in any number so to make it more readible . eg- 1_27_000
---> The underscore is not allowed just after the decimal. eg- 3._12 not allowed and not in the begining and not at the end.
---> It will not work on string and if we convert this string to number it will not work.
